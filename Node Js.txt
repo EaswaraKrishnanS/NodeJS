@@ -1,0 +1,233 @@
+Class - 1
+
+let a = 10;
+export default a; --> (ES6 - syntax)
+export default a; --> (Default Value)
+export default {a}; --> (Named Value For Multiple Value Export)
+module.exports = a; --> (ES5 - Syntax)
+
+
+import a from './one.js' --> (Default Value)
+import a from './one.js' --> (Named Value For Multiple Value Import)
+const a = require('./one') --> (ES5 - Syntax)
+console.log(a);
+ 
+
+Class -2
+
+
+Node Js Core Module :
+	os
+	FS --> To Work With File System
+	Path
+	Url
+	Http
+
+Node JS 3rd Party Module :
+	
+	npmjs.com
+
+
+Node Js 
+    |
+    |
+    |
+Asynchronous Programming
+	1.Callback
+	2.Promise
+	3.Await & Async
+
+FS Module For Read Text In File :
+    |
+    |---->Npm init -y (In Cmd)
+    |
+    |
+    |---->Package.json (Created) (Add Prop)
+    |
+    |
+    |---->"Type" : "Module"
+    |
+    |
+    |---->Package.json
+    |
+    |
+    |---->Abc.txt
+		Good Morning
+		Welcome To Node JS
+
+
+
+FS Module For Read Data From Another File And Write Text In New File :
+    |
+    |---->Npm init -y (In Cmd)
+    |
+    |
+    |---->Package.json (Created) (Add Prop)
+    |
+    |
+    |---->"Type" : "Module"
+    |
+    |
+    |---->Package.json
+    |
+    |
+    |---->Read.txt
+    |		Good Morning
+    |		Welcome To Node JS
+    |
+    |---->Write.txt
+    |		Good Morning
+    |		Welcome To Node JS
+
+
+
+What Is Callback ?
+	In Node.js, a callback function is an essential concept that allows for asynchronous execution of code. It is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
+ 
+
+
+Class - 3
+
+
+FS JSON 
+   |
+   |
+   |---->npm init - y (Update / Add - Package.json :: Type : Module)
+   |
+   |
+   |---->>Data.json[{data}]
+   |
+   |
+   |---->One.js
+   |
+
+
+JSON 
+   |
+   |
+   |---->Stringify() -->(Object To String)
+   |
+   |
+   |---->Parse() -->(String To String
+   |
+
+
+
+
+Path Module : Used For Use In Multiple Platform Like (Windows , linix , Mac)
+
+OM Server
+   |
+   |
+   |---->Static
+   |	    |
+   |	    |---->emp
+   |		   |
+   |		   |---->emp.json
+   |
+   |
+   |
+   |---->reademp.js
+
+
+
+Class - 4 & 5
+
+
+How To Create Server ? 		|	HTTP
+				|	FS
+How To Read .html Files ?	|	Path Static Website
+
+
+
+Class - 6
+
+
+ExpressApp_Routing :
+	|
+	|
+	|-->CMD > npm init -y
+	|
+	|
+	|-->CMD > npm i express dotenv morgan
+	|
+	|
+	|-->CMD > update package.json
+	|		|
+	|		|-->To Enable ES6 : "Type" : "Module"
+	|		|
+	|		|-->"Start" : "Nodemon app.js"
+	|
+	|
+	|-->CMD > npm Start
+	|
+	|
+	|-->app.js
+	|
+	|
+	|-->Config
+	|	|
+	|	|-->Dev.config
+	|
+	|
+	|-->Views 
+	|	|
+	|	|-->index.html
+	|	|
+	|	|-->about.html
+	|	|
+	|	|-->services.html
+	|	|
+	|	|-->contact.html
+
+
+Class - 7
+
+
+Rest APL's (API --> Application Programming Interface) :
+
+HTTP Methods :
+
+GET	|	Read
+POST	|	Create
+PUT	|	Update
+DELETE	|	Delete
+
+
+How To Test Rest API's ? :
+	Using Postman Tool
+
+POST , PUT , DELETE Method Are Not Showing The Message In Browser Level :
+
+	In Browser Level Only GET Method Will Be Perform other Are Perform Only In API Tools.
+
+
+Class - 8
+
+
+API Functions :
+
+	Create URL :
+		Note :
+			We Need To Verify Employee Exits Or Not . If Employee Not Exits We Need To Create New Employee
+
+	Update URL :
+		Note :
+			We Need To Verify Employee Exits Or Not . If Employee Exits Then Only We Are Going To Update / Delete
+
+
+Parse --> Convert String Data Into Object Data
+
+
+Class - 9
+
+
+How To Read Client Form Data / Postman Body Data ?
+			|
+			|
+			|
+_________________________________________________
+|						|
+Body Parser -->(ES5)			app.use(express.json) -->(ES6)
+
+
