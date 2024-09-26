@@ -24,8 +24,32 @@ routes.get("/read", async (req,resp) => {
     let employees = await getEmployee()
     return resp.json(employees)
 })
-routes.put("/update",(req,resp) => {
-    let eid = req.params.id
+routes.put("/update", async (req,resp) => {
+    let emp_id = req.params.id
+    let Employee = req.body
+    let employees = await getEmployee()
+    console.log(emp_id);
+    console.log(Employee);
+    console.log(employees);
+
+    let emp_data = employees.find((emp) => {
+        return emp.eid  == emp_id
+    })
+
+    console.log(emp_data);
+    if(!emp_data){
+        return resp.status(401).json({"msg" : "Employee Not Exits"})
+    }
+
+    let remaining_employees = employees.filter((emp) => {
+        return emp.eid != emp_id
+    })
+    remaining_employees.unshift(Employee)
+    console.log(remaining_employees);
+    saveEmployees(remaining_employees)
+    return resp.status(200).json({"msg" : "Employee Updated Succesfully"})
+    
+    
 })
 routes.delete("/del",(req,resp) => {
     let eid = req.params.id

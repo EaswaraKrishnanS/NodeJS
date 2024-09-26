@@ -24,7 +24,13 @@ Node Js Core Module :
 	Http
 
 Node JS 3rd Party Module :
-	
+
+	Express
+	Dotenv
+	Nockman
+	Chalk
+	Jwt ----> JSON Web Token
+	Bcrycpt	
 	npmjs.com
 
 
@@ -231,3 +237,9 @@ _________________________________________________
 Body Parser -->(ES5)			app.use(express.json) -->(ES6)
 
 
+Class - 10 ----> I Didn't Attend Because Of An Interview ( 23 / 09 / 2024 )
+
+
+Class - 11
+
+	
